@@ -1,0 +1,247 @@
+{
+  "show": "survivor",
+  "season": 50,
+  "season_name": "Survivor 50: New Millennium",
+  "contestants": [
+    {
+      "name": "Aubry Bracco",
+      "seasons_played": [32, 34, 38],
+      "archetype": "strategic",
+      "age": 37,
+      "hometown": "San Francisco, CA",
+      "status": "active",
+      "eliminated_episode": null,
+      "kalshi_slug": "aubry-bracco"
+    },
+    {
+      "name": "Boston Rob Mariano",
+      "seasons_played": [4, 8, 20, 22, 39],
+      "archetype": "strategic",
+      "age": 48,
+      "hometown": "Pensacola, FL",
+      "status": "active",
+      "eliminated_episode": null,
+      "kalshi_slug": "boston-rob-mariano"
+    },
+    {
+      "name": "Cirie Fields",
+      "seasons_played": [12, 16, 20, 34],
+      "archetype": "social",
+      "age": 54,
+      "hometown": "Walterboro, SC",
+      "status": "active",
+      "eliminated_episode": null,
+      "kalshi_slug": "cirie-fields"
+    },
+    {
+      "name": "Parvati Shallow",
+      "seasons_played": [13, 16, 20],
+      "archetype": "social",
+      "age": 41,
+      "hometown": "Vail, CO",
+      "status": "active",
+      "eliminated_episode": null,
+      "kalshi_slug": "parvati-shallow"
+    },
+    {
+      "name": "Tony Vlachos",
+      "seasons_played": [28, 34, 40],
+      "archetype": "wildcard",
+      "age": 49,
+      "hometown": "Jersey City, NJ",
+      "status": "active",
+      "eliminated_episode": null,
+      "kalshi_slug": "tony-vlachos"
+    },
+    {
+      "name": "Sandra Diaz-Twine",
+      "seasons_played": [7, 20, 34, 39, 44],
+      "archetype": "social",
+      "age": 49,
+      "hometown": "Fayetteville, NC",
+      "status": "active",
+      "eliminated_episode": null,
+      "kalshi_slug": "sandra-diaz-twine"
+    },
+    {
+      "name": "Ozzy Lusth",
+      "seasons_played": [13, 16, 23, 34],
+      "archetype": "physical",
+      "age": 42,
+      "hometown": "Venice, CA",
+      "status": "active",
+      "eliminated_episode": null,
+      "kalshi_slug": "ozzy-lusth"
+    },
+    {
+      "name": "Kim Spradlin",
+      "seasons_played": [24, 40],
+      "archetype": "strategic",
+      "age": 41,
+      "hometown": "San Antonio, TX",
+      "status": "active",
+      "eliminated_episode": null,
+      "kalshi_slug": "kim-spradlin"
+    },
+    {
+      "name": "Tyson Apostol",
+      "seasons_played": [18, 20, 27],
+      "archetype": "wildcard",
+      "age": 44,
+      "hometown": "Lindon, UT",
+      "status": "active",
+      "eliminated_episode": null,
+      "kalshi_slug": "tyson-apostol"
+    },
+    {
+      "name": "Tai Trang",
+      "seasons_played": [32, 34],
+      "archetype": "social",
+      "age": 57,
+      "hometown": "San Francisco, CA",
+      "status": "active",
+      "eliminated_episode": null,
+      "kalshi_slug": "tai-trang"
+    },
+    {
+      "name": "Jeremy Collins",
+      "seasons_played": [29, 31, 40],
+      "archetype": "physical",
+      "age": 45,
+      "hometown": "Foxborough, MA",
+      "status": "active",
+      "eliminated_episode": null,
+      "kalshi_slug": "jeremy-collins"
+    },
+    {
+      "name": "Spencer Bledsoe",
+      "seasons_played": [28, 31],
+      "archetype": "strategic",
+      "age": 31,
+      "hometown": "Chicago, IL",
+      "status": "active",
+      "eliminated_episode": null,
+      "kalshi_slug": "spencer-bledsoe"
+    },
+    {
+      "name": "Kelley Wentworth",
+      "seasons_played": [29, 31, 38],
+      "archetype": "strategic",
+      "age": 37,
+      "hometown": "Seattle, WA",
+      "status": "active",
+      "eliminated_episode": null,
+      "kalshi_slug": "kelley-wentworth"
+    },
+    {
+      "name": "Yul Kwon",
+      "seasons_played": [13, 40],
+      "archetype": "strategic",
+      "age": 49,
+      "hometown": "Washington, DC",
+      "status": "active",
+      "eliminated_episode": null,
+      "kalshi_slug": "yul-kwon"
+    },
+    {
+      "name": "Denise Stapley",
+      "seasons_played": [25, 40],
+      "archetype": "social",
+      "age": 52,
+      "hometown": "Marion, IA",
+      "status": "active",
+      "eliminated_episode": null,
+      "kalshi_slug": "denise-stapley"
+    },
+    {
+      "name": "Wendell Holland",
+      "seasons_played": [36, 40],
+      "archetype": "social",
+      "age": 39,
+      "hometown": "Philadelphia, PA",
+      "status": "active",
+      "eliminated_episode": null,
+      "kalshi_slug": "wendell-holland"
+    },
+    {
+      "name": "David Wright",
+      "seasons_played": [33, 38],
+      "archetype": "strategic",
+      "age": 46,
+      "hometown": "Sherman Oaks, CA",
+      "status": "active",
+      "eliminated_episode": null,
+      "kalshi_slug": "david-wright"
+    },
+    {
+      "name": "Natalie Anderson",
+      "seasons_played": [29, 40],
+      "archetype": "physical",
+      "age": 39,
+      "hometown": "Edgewater, NJ",
+      "status": "active",
+      "eliminated_episode": null,
+      "kalshi_slug": "natalie-anderson"
+    },
+    {
+      "name": "Sophie Clarke",
+      "seasons_played": [23, 40],
+      "archetype": "strategic",
+      "age": 34,
+      "hometown": "Willsboro, NY",
+      "status": "active",
+      "eliminated_episode": null,
+      "kalshi_slug": "sophie-clarke"
+    },
+    {
+      "name": "Lex van den Berghe",
+      "seasons_played": [3, 8],
+      "archetype": "physical",
+      "age": 58,
+      "hometown": "Santa Cruz, CA",
+      "status": "active",
+      "eliminated_episode": null,
+      "kalshi_slug": "lex-van-den-berghe"
+    },
+    {
+      "name": "Ethan Zohn",
+      "seasons_played": [3, 8, 22, 40],
+      "archetype": "social",
+      "age": 50,
+      "hometown": "Lexington, MA",
+      "status": "active",
+      "eliminated_episode": null,
+      "kalshi_slug": "ethan-zohn"
+    },
+    {
+      "name": "Amanda Kimmel",
+      "seasons_played": [15, 16, 20],
+      "archetype": "physical",
+      "age": 40,
+      "hometown": "Kalispell, MT",
+      "status": "active",
+      "eliminated_episode": null,
+      "kalshi_slug": "amanda-kimmel"
+    },
+    {
+      "name": "Rupert Boneham",
+      "seasons_played": [7, 8, 20, 27],
+      "archetype": "physical",
+      "age": 59,
+      "hometown": "Indianapolis, IN",
+      "status": "active",
+      "eliminated_episode": null,
+      "kalshi_slug": "rupert-boneham"
+    },
+    {
+      "name": "James Clement",
+      "seasons_played": [15, 16, 20],
+      "archetype": "physical",
+      "age": 48,
+      "hometown": "Lafayette, LA",
+      "status": "active",
+      "eliminated_episode": null,
+      "kalshi_slug": "james-clement"
+    }
+  ]
+}

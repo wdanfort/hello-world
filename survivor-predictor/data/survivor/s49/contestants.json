@@ -1,0 +1,18 @@
+{
+  "show": "survivor",
+  "season": 49,
+  "season_name": "Survivor 49",
+  "note": "Populate from Survivor wiki: https://survivor.fandom.com/wiki/Survivor_49",
+  "contestants": [
+    {
+      "name": "TBD",
+      "seasons_played": [49],
+      "archetype": "strategic",
+      "age": null,
+      "hometown": null,
+      "status": "eliminated",
+      "eliminated_episode": null,
+      "kalshi_slug": null
+    }
+  ]
+}

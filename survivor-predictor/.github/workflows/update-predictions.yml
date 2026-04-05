@@ -1,0 +1,39 @@
+name: Update Predictions
+
+on:
+  # Survivor 50 airs Wednesdays at 8pm ET
+  # Run Thursday morning to catch overnight recaps
+  schedule:
+    - cron: '0 14 * * 4'  # 2pm UTC = 10am ET Thursday
+  workflow_dispatch:       # Manual trigger via GitHub UI
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install -r survivor-predictor/requirements.txt
+
+      - name: Run prediction pipeline
+        run: |
+          cd survivor-predictor
+          python -m src.main --show survivor --season 50 --episode auto --sources reddit,youtube
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          REDDIT_CLIENT_ID: ${{ secrets.REDDIT_CLIENT_ID }}
+          REDDIT_CLIENT_SECRET: ${{ secrets.REDDIT_CLIENT_SECRET }}
+          REDDIT_USER_AGENT: "survivor-predictor/1.0"
+          KALSHI_API_KEY: ${{ secrets.KALSHI_API_KEY }}
+
+      - name: Commit updated predictions
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Update predictions for latest episode [automated]"
+          file_pattern: survivor-predictor/data/

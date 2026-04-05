@@ -1,0 +1,23 @@
+show:
+  name: "Show Name"
+  slug: "show-slug"
+  network: "Network"
+  air_day: "wednesday"          # Day of week, lowercase
+  air_time_et: "20:00"          # 24h ET
+  subreddits: ["subreddit"]     # List of subreddits to monitor
+  kalshi_market_slug: "kx..."   # Kalshi market identifier
+
+contestant_schema:
+  extra_fields:
+    - { name: "field_name", type: "string" }   # string | boolean | list[int] | enum
+
+scoring_dimensions:
+  - { key: "edit_visibility", label: "Edit Visibility", description: "Screen time and confessional presence" }
+  - { key: "winner_signals", label: "Winner Edit Signals", description: "Classic winner edit patterns" }
+  # Add show-specific dimensions here
+
+elimination_mechanics:
+  type: "vote"                  # vote | banishment | combination
+  description: "Description of elimination mechanic"
+
+prediction_targets: ["winner", "next_elimination"]
