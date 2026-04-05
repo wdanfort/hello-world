@@ -28,14 +28,34 @@ def load_contestants(show_slug: str, season: int) -> list[dict]:
 
 
 def get_active_contestants(show_slug: str, season: int) -> list[dict]:
-    return [c for c in load_contestants(show_slug, season) if c.get("status") == "active"]
+    return [
+        c for c in load_contestants(show_slug, season)
+        if c.get("status") in ("active", "winner")
+    ]
 
 
 def get_eliminated_names(show_slug: str, season: int) -> list[str]:
     return [
         c["name"]
         for c in load_contestants(show_slug, season)
-        if c.get("status") != "active"
+        if c.get("status") not in ("active", "winner")
+    ]
+
+
+def get_active_at_episode(show_slug: str, season: int, episode: int) -> list[dict]:
+    """Return contestants who were still active at the START of the given episode."""
+    return [
+        c for c in load_contestants(show_slug, season)
+        if c.get("eliminated_episode") is None or c["eliminated_episode"] >= episode
+    ]
+
+
+def get_eliminated_before_episode(show_slug: str, season: int, episode: int) -> list[str]:
+    """Return names of contestants eliminated strictly before the given episode."""
+    return [
+        c["name"]
+        for c in load_contestants(show_slug, season)
+        if c.get("eliminated_episode") is not None and c["eliminated_episode"] < episode
     ]
 
 

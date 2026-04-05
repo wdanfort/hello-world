@@ -1,0 +1,206 @@
+{
+  "show": "survivor",
+  "season": 47,
+  "season_name": "Survivor 47",
+  "contestants": [
+    {
+      "name": "Rachel LaMont",
+      "tribe": "Gata",
+      "seasons_played": [47],
+      "archetype": "utr",
+      "age": 33,
+      "hometown": "Southfield, MI",
+      "status": "winner",
+      "eliminated_episode": null,
+      "kalshi_slug": "rachel-lamont"
+    },
+    {
+      "name": "Sam Phalen",
+      "tribe": "Gata",
+      "seasons_played": [47],
+      "archetype": "social",
+      "age": 24,
+      "hometown": "Bettendorf, IA",
+      "status": "eliminated",
+      "eliminated_episode": 13,
+      "kalshi_slug": "sam-phalen"
+    },
+    {
+      "name": "Sue Smey",
+      "tribe": "Tuku",
+      "seasons_played": [47],
+      "archetype": "social",
+      "age": 60,
+      "hometown": "Upstate New York, NY",
+      "status": "eliminated",
+      "eliminated_episode": 13,
+      "kalshi_slug": "sue-smey"
+    },
+    {
+      "name": "Teeny Chirichillo",
+      "tribe": "Lavo",
+      "seasons_played": [47],
+      "archetype": "social",
+      "age": 23,
+      "hometown": "Manahawkin, NJ",
+      "status": "eliminated",
+      "eliminated_episode": 13,
+      "eliminated_method": "firemaking",
+      "kalshi_slug": "teeny-chirichillo"
+    },
+    {
+      "name": "Caroline Vidmar",
+      "tribe": "Tuku",
+      "seasons_played": [47],
+      "archetype": "strategic",
+      "age": 27,
+      "hometown": "Chicago, IL",
+      "status": "eliminated",
+      "eliminated_episode": 13,
+      "kalshi_slug": "caroline-vidmar"
+    },
+    {
+      "name": "Genevieve Mushaluk",
+      "tribe": "Lavo",
+      "seasons_played": [47],
+      "archetype": "strategic",
+      "age": 29,
+      "hometown": "Winnipeg, Manitoba",
+      "status": "eliminated",
+      "eliminated_episode": 12,
+      "kalshi_slug": "genevieve-mushaluk"
+    },
+    {
+      "name": "Andy Rueda",
+      "tribe": "Gata",
+      "seasons_played": [47],
+      "archetype": "strategic",
+      "age": 34,
+      "hometown": "Brooklyn, NY",
+      "status": "eliminated",
+      "eliminated_episode": 11,
+      "kalshi_slug": "andy-rueda"
+    },
+    {
+      "name": "Kyle Ostwald",
+      "tribe": "Tuku",
+      "seasons_played": [47],
+      "archetype": "physical",
+      "age": 31,
+      "hometown": "Goleta, CA",
+      "status": "eliminated",
+      "eliminated_episode": 10,
+      "kalshi_slug": "kyle-ostwald"
+    },
+    {
+      "name": "Gabe Ortis",
+      "tribe": "Tuku",
+      "seasons_played": [47],
+      "archetype": "strategic",
+      "age": 25,
+      "hometown": "New Haven, CT",
+      "status": "eliminated",
+      "eliminated_episode": 9,
+      "kalshi_slug": "gabe-ortis"
+    },
+    {
+      "name": "Sol Yi",
+      "tribe": "Lavo",
+      "seasons_played": [47],
+      "archetype": "strategic",
+      "age": 27,
+      "hometown": "Los Angeles, CA",
+      "status": "eliminated",
+      "eliminated_episode": 8,
+      "kalshi_slug": "sol-yi"
+    },
+    {
+      "name": "Sierra Wright",
+      "tribe": "Gata",
+      "seasons_played": [47],
+      "archetype": "social",
+      "age": 27,
+      "hometown": "Maricopa, AZ",
+      "status": "eliminated",
+      "eliminated_episode": 7,
+      "kalshi_slug": "sierra-wright"
+    },
+    {
+      "name": "Tiyana Hallums",
+      "tribe": "Tuku",
+      "seasons_played": [47],
+      "archetype": "strategic",
+      "age": 28,
+      "hometown": "Washington, DC",
+      "status": "eliminated",
+      "eliminated_episode": 7,
+      "kalshi_slug": "tiyana-hallums"
+    },
+    {
+      "name": "Kishan Patel",
+      "tribe": "Lavo",
+      "seasons_played": [47],
+      "archetype": "strategic",
+      "age": 30,
+      "hometown": "Jersey City, NJ",
+      "status": "eliminated",
+      "eliminated_episode": 6,
+      "kalshi_slug": "kishan-patel-s47"
+    },
+    {
+      "name": "Anika Dhar",
+      "tribe": "Gata",
+      "seasons_played": [47],
+      "archetype": "social",
+      "age": 26,
+      "hometown": "Jersey City, NJ",
+      "status": "eliminated",
+      "eliminated_episode": 5,
+      "kalshi_slug": "anika-dhar"
+    },
+    {
+      "name": "Rome Cooney",
+      "tribe": "Lavo",
+      "seasons_played": [47],
+      "archetype": "wildcard",
+      "age": 30,
+      "hometown": "Los Angeles, CA",
+      "status": "eliminated",
+      "eliminated_episode": 4,
+      "kalshi_slug": "rome-cooney"
+    },
+    {
+      "name": "Aysha Welch",
+      "tribe": "Lavo",
+      "seasons_played": [47],
+      "archetype": "social",
+      "age": 33,
+      "hometown": "Atlanta, GA",
+      "status": "eliminated",
+      "eliminated_episode": 3,
+      "kalshi_slug": "aysha-welch"
+    },
+    {
+      "name": "Terran \"TK\" Foster",
+      "tribe": "Tuku",
+      "seasons_played": [47],
+      "archetype": "physical",
+      "age": 34,
+      "hometown": "Atlanta, GA",
+      "status": "eliminated",
+      "eliminated_episode": 2,
+      "kalshi_slug": "tk-foster"
+    },
+    {
+      "name": "Jon Lovett",
+      "tribe": "Gata",
+      "seasons_played": [47],
+      "archetype": "social",
+      "age": 38,
+      "hometown": "Los Angeles, CA",
+      "status": "eliminated",
+      "eliminated_episode": 1,
+      "kalshi_slug": "jon-lovett"
+    }
+  ]
+}

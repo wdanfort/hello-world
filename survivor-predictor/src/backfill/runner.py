@@ -70,7 +70,12 @@ def run_backfill(
         all_episode_nums = [e for e in all_episode_nums if e >= start_episode]
 
     calibration_results: list[dict] = []
-    eliminated_so_far: list[str] = []
+
+    # Build episode→eliminated mapping from outcomes (handles double-boot episodes)
+    ep_to_eliminated: dict[int, list[str]] = {}
+    for e in outcomes.get("eliminations", []):
+        ep = e["episode"]
+        ep_to_eliminated.setdefault(ep, []).append(e["eliminated"])
 
     # Set up output dir
     backfill_ep_dir = config.backfill_dir(show_slug, season) / "episodes"
@@ -80,22 +85,21 @@ def run_backfill(
         out_path = backfill_ep_dir / f"episode_{ep_num:02d}.json"
         if out_path.exists() and not force:
             print(f"[backfill] Skipping episode {ep_num} (already processed). Use --force to redo.")
-            # Still need to track elimination for downstream episodes
-            ep_elim = next(
-                (e["eliminated"] for e in outcomes["eliminations"] if e["episode"] == ep_num), None
-            )
-            if ep_elim:
-                eliminated_so_far.append(ep_elim)
             continue
 
         print(f"\n[backfill] Processing S{season}E{ep_num}...")
 
         air_date = air_dates.get(str(ep_num))
 
-        # Active contestants BEFORE this episode
+        # Active contestants BEFORE this episode (driven by contestants.json eliminated_episode)
+        eliminated_before = {
+            c["name"] for c in all_contestants
+            if c.get("eliminated_episode") is not None
+            and c["eliminated_episode"] < ep_num
+        }
         active_at_ep = [
             c["name"] for c in all_contestants
-            if c["name"] not in eliminated_so_far
+            if c["name"] not in eliminated_before
         ]
 
         if not active_at_ep:
@@ -144,6 +148,8 @@ def run_backfill(
         all_scores = scoring.compute_cumulative_scores(show_slug, season)
         all_scores_str = json.dumps(all_scores, indent=2)
 
+        eliminated_so_far = list(eliminated_before)  # names eliminated before this ep
+
         # Predict winner
         winner_raw = llm_analyzer.predict_winner(
             show_slug=show_slug,
@@ -180,35 +186,28 @@ def run_backfill(
         }
         export.save_episode_prediction(show_slug, season, ep_num, predictions)
 
-        # Evaluate accuracy
-        actual_eliminated = next(
-            (e["eliminated"] for e in outcomes["eliminations"] if e["episode"] == ep_num), None
-        )
+        # Evaluate accuracy (handles double-boot episodes)
+        actual_boots = ep_to_eliminated.get(ep_num, [])
+        rank = sorted(elim_probs, key=lambda x: elim_probs.get(x, 0), reverse=True)
 
         calibration_entry: dict = {
             "episode": ep_num,
-            "actual_eliminated": actual_eliminated,
-            "predicted_elim_probs": {
-                k: round(v, 4) for k, v in elim_probs.items()
-            },
+            "actual_eliminated": actual_boots,
+            "predicted_elim_probs": {k: round(v, 4) for k, v in elim_probs.items()},
             "actual_winner": outcomes.get("winner"),
-            "predicted_winner_probs": {
-                k: round(v, 4) for k, v in winner_probs.items()
-            },
+            "predicted_winner_probs": {k: round(v, 4) for k, v in winner_probs.items()},
         }
-        if actual_eliminated:
-            rank = sorted(elim_probs, key=lambda x: elim_probs.get(x, 0), reverse=True)
-            calibration_entry["correct_elim"] = actual_eliminated == rank[0] if rank else False
-            calibration_entry["elim_in_top3"] = actual_eliminated in rank[:3] if len(rank) >= 3 else False
-            calibration_entry["assigned_elim_prob"] = elim_probs.get(actual_eliminated, 0.0)
+        if actual_boots:
+            # Correct if any actual boot was top-1 predicted
+            calibration_entry["correct_elim"] = any(b == rank[0] for b in actual_boots) if rank else False
+            calibration_entry["elim_in_top3"] = any(b in rank[:3] for b in actual_boots) if len(rank) >= 3 else False
+            # Use highest assigned prob among actual boots for calibration
+            calibration_entry["assigned_elim_prob"] = max(
+                (elim_probs.get(b, 0.0) for b in actual_boots), default=0.0
+            )
 
         calibration_results.append(calibration_entry)
-
-        # Update eliminated list for next iteration
-        if actual_eliminated:
-            eliminated_so_far.append(actual_eliminated)
-
-        print(f"[backfill] Episode {ep_num} done. Actual boot: {actual_eliminated or 'unknown'}")
+        print(f"[backfill] Episode {ep_num} done. Actual boot(s): {', '.join(actual_boots) or 'unknown'}")
 
     # Save calibration summary
     correct_elim = sum(1 for r in calibration_results if r.get("correct_elim"))
