@@ -1,0 +1,37 @@
+name: Sync Wiki Eliminations
+
+on:
+  # Run Wednesday night at 11pm ET (3am UTC Thursday)
+  # — after Survivor airs (8-10pm ET) and wiki editors update the page
+  schedule:
+    - cron: '0 3 * * 4'   # 3am UTC Thursday = 11pm ET Wednesday
+  workflow_dispatch:       # Manual trigger any time
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install requests beautifulsoup4 pyyaml python-dotenv
+
+      - name: Sync Survivor 50 wiki eliminations
+        id: sync
+        run: |
+          cd survivor-predictor
+          python -m src.ingest.wiki_scraper --show survivor --season 50
+        # No API keys needed — wiki is public
+
+      - name: Commit updated data files
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Auto-sync: update S50 eliminations from wiki [automated]"
+          file_pattern: |
+            survivor-predictor/data/survivor/s50/contestants.json
+            survivor-predictor/data/survivor/s50/outcomes.json
