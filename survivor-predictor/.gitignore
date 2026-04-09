@@ -1,0 +1,22 @@
+.env
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+.venv/
+venv/
+env/
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+*.log
+
+# Keep data directory structure but ignore cached ingest files (they can be regenerated)
+data/survivor/s50/episodes/reddit_*.json
+data/survivor/s50/episodes/youtube_*.json
+data/survivor/s49/episodes/reddit_*.json
+data/survivor/s49/episodes/youtube_*.json

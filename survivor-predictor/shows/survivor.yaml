@@ -1,0 +1,29 @@
+show:
+  name: "Survivor"
+  slug: "survivor"
+  network: "CBS"
+  air_day: "wednesday"
+  air_time_et: "20:00"
+  subreddits: ["survivor"]
+  kalshi_market_slug: "kxsurvivor"
+
+contestant_schema:
+  extra_fields:
+    - { name: "tribe", type: "string" }
+    - { name: "seasons_played", type: "list[int]" }
+    - { name: "archetype", type: "enum", values: ["strategic", "social", "physical", "utr", "wildcard"] }
+
+scoring_dimensions:
+  - { key: "edit_visibility", label: "Edit Visibility", description: "Screen time and confessional presence" }
+  - { key: "edit_sentiment", label: "Edit Sentiment", description: "Hero/winner edit vs villain/boot edit" }
+  - { key: "strategic_positioning", label: "Strategic Position", description: "Game control and voting bloc power" }
+  - { key: "threat_perception", label: "Threat Level", description: "How targeted they are" }
+  - { key: "alliance_strength", label: "Alliance Strength", description: "Reliability of their alliance network" }
+  - { key: "elimination_risk", label: "Elimination Risk", description: "Likelihood of being voted out next" }
+  - { key: "winner_signals", label: "Winner Edit Signals", description: "Classic winner edit patterns" }
+
+elimination_mechanics:
+  type: "vote"
+  description: "Contestants vote each other out at tribal council"
+
+prediction_targets: ["winner", "next_elimination"]

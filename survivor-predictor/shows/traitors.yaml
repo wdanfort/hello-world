@@ -1,0 +1,28 @@
+show:
+  name: "The Traitors"
+  slug: "traitors"
+  network: "Peacock"
+  air_day: "thursday"
+  air_time_et: "20:00"
+  subreddits: ["TheTraitors"]
+  kalshi_market_slug: "kxtraitors"
+
+contestant_schema:
+  extra_fields:
+    - { name: "role", type: "enum", values: ["traitor", "faithful", "unknown"] }
+    - { name: "celebrity_status", type: "boolean" }
+
+scoring_dimensions:
+  - { key: "edit_visibility", label: "Edit Visibility", description: "Screen time and confessional presence" }
+  - { key: "suspicion_received", label: "Suspicion Received", description: "How much heat from other players" }
+  - { key: "suspicion_accuracy", label: "Read Accuracy", description: "How correct are their reads on traitors" }
+  - { key: "social_influence", label: "Social Influence", description: "Ability to sway roundtable votes" }
+  - { key: "deception_skill", label: "Deception Skill", description: "For traitors: how well they hide" }
+  - { key: "shield_strength", label: "Shield Strength", description: "Protection from allies or perceived harmlessness" }
+  - { key: "winner_signals", label: "Winner Edit Signals", description: "Classic winner edit patterns" }
+
+elimination_mechanics:
+  type: "banishment"
+  description: "Faithfuls vote to banish at roundtable. Traitors murder at night."
+
+prediction_targets: ["winner", "next_banishment", "next_murder", "traitor_reveal"]

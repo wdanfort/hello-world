@@ -1,0 +1,38 @@
+{
+  "season": 47,
+  "air_dates": {
+    "1":  "2024-09-18",
+    "2":  "2024-09-25",
+    "3":  "2024-10-02",
+    "4":  "2024-10-09",
+    "5":  "2024-10-16",
+    "6":  "2024-10-23",
+    "7":  "2024-10-30",
+    "8":  "2024-11-06",
+    "9":  "2024-11-13",
+    "10": "2024-11-20",
+    "11": "2024-12-04",
+    "12": "2024-12-11",
+    "13": "2024-12-18"
+  },
+  "eliminations": [
+    { "episode": 1,  "eliminated": "Jon Lovett",           "method": "voted_out" },
+    { "episode": 2,  "eliminated": "Terran \"TK\" Foster",  "method": "voted_out" },
+    { "episode": 3,  "eliminated": "Aysha Welch",           "method": "voted_out" },
+    { "episode": 4,  "eliminated": "Rome Cooney",           "method": "voted_out" },
+    { "episode": 5,  "eliminated": "Anika Dhar",            "method": "voted_out" },
+    { "episode": 6,  "eliminated": "Kishan Patel",          "method": "voted_out" },
+    { "episode": 7,  "eliminated": "Tiyana Hallums",        "method": "voted_out", "note": "non-jury merge boot" },
+    { "episode": 7,  "eliminated": "Sierra Wright",         "method": "voted_out", "note": "first jury member; double-boot merge episode" },
+    { "episode": 8,  "eliminated": "Sol Yi",                "method": "voted_out" },
+    { "episode": 9,  "eliminated": "Gabe Ortis",            "method": "voted_out" },
+    { "episode": 10, "eliminated": "Kyle Ostwald",          "method": "voted_out" },
+    { "episode": 11, "eliminated": "Andy Rueda",            "method": "voted_out" },
+    { "episode": 12, "eliminated": "Genevieve Mushaluk",    "method": "voted_out" },
+    { "episode": 13, "eliminated": "Caroline Vidmar",       "method": "voted_out" },
+    { "episode": 13, "eliminated": "Teeny Chirichillo",     "method": "firemaking", "note": "lost F4 fire to Sam Phalen" }
+  ],
+  "winner": "Rachel LaMont",
+  "final_tribal": ["Rachel LaMont", "Sam Phalen", "Sue Smey"],
+  "jury_vote": { "Rachel LaMont": 7, "Sam Phalen": 1, "Sue Smey": 0 }
+}

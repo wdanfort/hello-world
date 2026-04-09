@@ -1,0 +1,272 @@
+{
+  "show": "survivor",
+  "season": 50,
+  "season_name": "Survivor 50: In the Hands of the Fans",
+  "contestants": [
+    {
+      "name": "Cirie Fields",
+      "tribe": "Cila",
+      "seasons_played": [12, 16, 20, 34],
+      "archetype": "social",
+      "age": 55,
+      "hometown": "Walterboro, SC",
+      "status": "active",
+      "eliminated_episode": null,
+      "kalshi_slug": "cirie-fields"
+    },
+    {
+      "name": "Ozzy Lusth",
+      "tribe": "Cila",
+      "seasons_played": [13, 16, 23, 34],
+      "archetype": "physical",
+      "age": 43,
+      "hometown": "Venice, CA",
+      "status": "active",
+      "eliminated_episode": null,
+      "kalshi_slug": "ozzy-lusth"
+    },
+    {
+      "name": "Christian Hubicki",
+      "tribe": "Cila",
+      "seasons_played": [37],
+      "archetype": "strategic",
+      "age": 37,
+      "hometown": "Baltimore, MD",
+      "status": "active",
+      "eliminated_episode": null,
+      "kalshi_slug": "christian-hubicki"
+    },
+    {
+      "name": "Emily Flippen",
+      "tribe": "Cila",
+      "seasons_played": [45],
+      "archetype": "strategic",
+      "age": 30,
+      "hometown": "Austin, TX",
+      "status": "active",
+      "eliminated_episode": null,
+      "kalshi_slug": "emily-flippen"
+    },
+    {
+      "name": "Rick Devens",
+      "tribe": "Cila",
+      "seasons_played": [38],
+      "archetype": "wildcard",
+      "age": 40,
+      "hometown": "Macon, GA",
+      "status": "active",
+      "eliminated_episode": null,
+      "kalshi_slug": "rick-devens"
+    },
+    {
+      "name": "Joe Hunter",
+      "tribe": "Cila",
+      "seasons_played": [48],
+      "archetype": "physical",
+      "age": 49,
+      "hometown": "Beaumont, TX",
+      "status": "active",
+      "eliminated_episode": null,
+      "kalshi_slug": "joe-hunter-s50"
+    },
+    {
+      "name": "Dee Valladares",
+      "tribe": "Kalo",
+      "seasons_played": [45],
+      "archetype": "social",
+      "age": 27,
+      "hometown": "Miami, FL",
+      "status": "active",
+      "eliminated_episode": null,
+      "kalshi_slug": "dee-valladares"
+    },
+    {
+      "name": "Benjamin \"Coach\" Wade",
+      "tribe": "Kalo",
+      "seasons_played": [18, 20, 23],
+      "archetype": "wildcard",
+      "age": 47,
+      "hometown": "Susanville, CA",
+      "status": "active",
+      "eliminated_episode": null,
+      "kalshi_slug": "coach-wade"
+    },
+    {
+      "name": "Jonathan Young",
+      "tribe": "Kalo",
+      "seasons_played": [43],
+      "archetype": "physical",
+      "age": 31,
+      "hometown": "Gadsden, AL",
+      "status": "active",
+      "eliminated_episode": null,
+      "kalshi_slug": "jonathan-young"
+    },
+    {
+      "name": "Tiffany Ervin",
+      "tribe": "Kalo",
+      "seasons_played": [41],
+      "archetype": "strategic",
+      "age": 47,
+      "hometown": "Uniondale, NY",
+      "status": "active",
+      "eliminated_episode": null,
+      "kalshi_slug": "tiffany-ervin"
+    },
+    {
+      "name": "Chrissy Hofbeck",
+      "tribe": "Kalo",
+      "seasons_played": [35],
+      "archetype": "strategic",
+      "age": 52,
+      "hometown": "Lebanon, NJ",
+      "status": "active",
+      "eliminated_episode": null,
+      "kalshi_slug": "chrissy-hofbeck"
+    },
+    {
+      "name": "Aubry Bracco",
+      "tribe": "Vatu",
+      "seasons_played": [32, 34, 38],
+      "archetype": "strategic",
+      "age": 37,
+      "hometown": "San Francisco, CA",
+      "status": "active",
+      "eliminated_episode": null,
+      "kalshi_slug": "aubry-bracco"
+    },
+    {
+      "name": "Stephenie LaGrossa Kendrick",
+      "tribe": "Vatu",
+      "seasons_played": [10, 11, 20],
+      "archetype": "physical",
+      "age": 42,
+      "hometown": "Philadelphia, PA",
+      "status": "active",
+      "eliminated_episode": null,
+      "kalshi_slug": "stephenie-lagrossa"
+    },
+    {
+      "name": "Rizo Velovic",
+      "tribe": "Vatu",
+      "seasons_played": [49],
+      "archetype": "wildcard",
+      "age": 26,
+      "hometown": "Chicago, IL",
+      "status": "active",
+      "eliminated_episode": null,
+      "kalshi_slug": "rizo-velovic"
+    },
+    {
+      "name": "Colby Donaldson",
+      "tribe": "Vatu",
+      "seasons_played": [2, 8, 20],
+      "archetype": "physical",
+      "age": 52,
+      "hometown": "Christoval, TX",
+      "status": "eliminated",
+      "eliminated_episode": 6,
+      "kalshi_slug": "colby-donaldson"
+    },
+    {
+      "name": "Genevieve Mushaluk",
+      "tribe": "Vatu",
+      "seasons_played": [47],
+      "archetype": "strategic",
+      "age": 30,
+      "hometown": "Winnipeg, Manitoba",
+      "status": "eliminated",
+      "eliminated_episode": 6,
+      "kalshi_slug": "genevieve-mushaluk-s50"
+    },
+    {
+      "name": "Kamilla Karthigesu",
+      "tribe": "Kalo",
+      "seasons_played": [48],
+      "archetype": "social",
+      "age": 26,
+      "hometown": "Mississauga, Ontario",
+      "status": "eliminated",
+      "eliminated_episode": 6,
+      "kalshi_slug": "kamilla-karthigesu-s50"
+    },
+    {
+      "name": "Angelina Keeley",
+      "tribe": "Vatu",
+      "seasons_played": [37],
+      "archetype": "wildcard",
+      "age": 37,
+      "hometown": "Sparks, NV",
+      "status": "eliminated",
+      "eliminated_episode": 5,
+      "kalshi_slug": "angelina-keeley"
+    },
+    {
+      "name": "Charlie Davis",
+      "tribe": "Kalo",
+      "seasons_played": [46],
+      "archetype": "strategic",
+      "age": 25,
+      "hometown": "Boston, MA",
+      "status": "eliminated",
+      "eliminated_episode": 5,
+      "kalshi_slug": "charlie-davis"
+    },
+    {
+      "name": "Mike White",
+      "tribe": "Kalo",
+      "seasons_played": [37],
+      "archetype": "social",
+      "age": 54,
+      "hometown": "Los Angeles, CA",
+      "status": "eliminated",
+      "eliminated_episode": 4,
+      "kalshi_slug": "mike-white"
+    },
+    {
+      "name": "Q Burdette",
+      "tribe": "Vatu",
+      "seasons_played": [46],
+      "archetype": "wildcard",
+      "age": 31,
+      "hometown": "Decatur, GA",
+      "status": "eliminated",
+      "eliminated_episode": 3,
+      "kalshi_slug": "q-burdette"
+    },
+    {
+      "name": "Savannah Louie",
+      "tribe": "Cila",
+      "seasons_played": [49],
+      "archetype": "utr",
+      "age": 24,
+      "hometown": "Honolulu, HI",
+      "status": "eliminated",
+      "eliminated_episode": 2,
+      "kalshi_slug": "savannah-louie"
+    },
+    {
+      "name": "Kyle Fraser",
+      "tribe": "Vatu",
+      "seasons_played": [48],
+      "archetype": "strategic",
+      "age": 32,
+      "hometown": "Toronto, Ontario",
+      "status": "eliminated",
+      "eliminated_episode": 1,
+      "eliminated_method": "medical_evacuation",
+      "kalshi_slug": "kyle-fraser-s50"
+    },
+    {
+      "name": "Jenna Lewis-Dougherty",
+      "tribe": "Cila",
+      "seasons_played": [1, 8],
+      "archetype": "social",
+      "age": 46,
+      "hometown": "Franklin, NH",
+      "status": "eliminated",
+      "eliminated_episode": 1,
+      "kalshi_slug": "jenna-lewis"
+    }
+  ]
+}

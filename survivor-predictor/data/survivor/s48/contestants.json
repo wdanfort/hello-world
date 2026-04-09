@@ -1,0 +1,208 @@
+{
+  "show": "survivor",
+  "season": 48,
+  "season_name": "Survivor 48",
+  "contestants": [
+    {
+      "name": "Kyle Fraser",
+      "tribe": "Civa",
+      "seasons_played": [48],
+      "archetype": "strategic",
+      "age": 31,
+      "hometown": "Toronto, Ontario",
+      "status": "winner",
+      "eliminated_episode": null,
+      "kalshi_slug": "kyle-fraser"
+    },
+    {
+      "name": "Eva Erickson",
+      "tribe": "Lagi",
+      "seasons_played": [48],
+      "archetype": "social",
+      "age": 28,
+      "hometown": "Portland, OR",
+      "status": "eliminated",
+      "eliminated_episode": 13,
+      "kalshi_slug": "eva-erickson"
+    },
+    {
+      "name": "Joe Hunter",
+      "tribe": "Lagi",
+      "seasons_played": [48],
+      "archetype": "physical",
+      "age": 48,
+      "hometown": "Beaumont, TX",
+      "status": "eliminated",
+      "eliminated_episode": 13,
+      "kalshi_slug": "joe-hunter"
+    },
+    {
+      "name": "Kamilla Karthigesu",
+      "tribe": "Civa",
+      "seasons_played": [48],
+      "archetype": "social",
+      "age": 25,
+      "hometown": "Mississauga, Ontario",
+      "status": "eliminated",
+      "eliminated_episode": 13,
+      "eliminated_method": "firemaking",
+      "kalshi_slug": "kamilla-karthigesu"
+    },
+    {
+      "name": "Shauhin Davari",
+      "tribe": "Lagi",
+      "seasons_played": [48],
+      "archetype": "strategic",
+      "age": 34,
+      "hometown": "San Jose, CA",
+      "status": "eliminated",
+      "eliminated_episode": 12,
+      "kalshi_slug": "shauhin-davari"
+    },
+    {
+      "name": "Saiounia \"Sai\" Hughley",
+      "tribe": "Vula",
+      "seasons_played": [48],
+      "archetype": "social",
+      "age": 26,
+      "hometown": "Atlanta, GA",
+      "status": "eliminated",
+      "eliminated_episode": 12,
+      "kalshi_slug": "sai-hughley"
+    },
+    {
+      "name": "Mitch Guerra",
+      "tribe": "Civa",
+      "seasons_played": [48],
+      "archetype": "social",
+      "age": 25,
+      "hometown": "San Antonio, TX",
+      "status": "eliminated",
+      "eliminated_episode": 11,
+      "kalshi_slug": "mitch-guerra"
+    },
+    {
+      "name": "Mary Zheng",
+      "tribe": "Vula",
+      "seasons_played": [48],
+      "archetype": "strategic",
+      "age": 28,
+      "hometown": "Brooklyn, NY",
+      "status": "eliminated",
+      "eliminated_episode": 10,
+      "kalshi_slug": "mary-zheng"
+    },
+    {
+      "name": "David Kinne",
+      "tribe": "Civa",
+      "seasons_played": [48],
+      "archetype": "strategic",
+      "age": 38,
+      "hometown": "Nashville, TN",
+      "status": "eliminated",
+      "eliminated_episode": 9,
+      "kalshi_slug": "david-kinne"
+    },
+    {
+      "name": "Star Toomey",
+      "tribe": "Lagi",
+      "seasons_played": [48],
+      "archetype": "social",
+      "age": 52,
+      "hometown": "Memphis, TN",
+      "status": "eliminated",
+      "eliminated_episode": 8,
+      "kalshi_slug": "star-toomey"
+    },
+    {
+      "name": "Cedrek McFadden",
+      "tribe": "Vula",
+      "seasons_played": [48],
+      "archetype": "social",
+      "age": 35,
+      "hometown": "Greenville, SC",
+      "status": "eliminated",
+      "eliminated_episode": 7,
+      "kalshi_slug": "cedrek-mcfadden"
+    },
+    {
+      "name": "Bianca Roses",
+      "tribe": "Lagi",
+      "seasons_played": [48],
+      "archetype": "social",
+      "age": 24,
+      "hometown": "Miami, FL",
+      "status": "eliminated",
+      "eliminated_episode": 7,
+      "eliminated_method": "voted_out",
+      "kalshi_slug": "bianca-roses",
+      "note": "non-jury boot; Split Tribal Council episode"
+    },
+    {
+      "name": "Thomas Krottinger",
+      "tribe": "Lagi",
+      "seasons_played": [48],
+      "archetype": "physical",
+      "age": 31,
+      "hometown": "Austin, TX",
+      "status": "eliminated",
+      "eliminated_episode": 6,
+      "kalshi_slug": "thomas-krottinger"
+    },
+    {
+      "name": "Kevin Leung",
+      "tribe": "Vula",
+      "seasons_played": [48],
+      "archetype": "strategic",
+      "age": 33,
+      "hometown": "Philadelphia, PA",
+      "status": "eliminated",
+      "eliminated_episode": 5,
+      "kalshi_slug": "kevin-leung"
+    },
+    {
+      "name": "Charity Nelms",
+      "tribe": "Civa",
+      "seasons_played": [48],
+      "archetype": "social",
+      "age": 27,
+      "hometown": "Satsuma, AL",
+      "status": "eliminated",
+      "eliminated_episode": 4,
+      "kalshi_slug": "charity-nelms"
+    },
+    {
+      "name": "Justin Pioppi",
+      "tribe": "Vula",
+      "seasons_played": [48],
+      "archetype": "wildcard",
+      "age": 32,
+      "hometown": "Milford, CT",
+      "status": "eliminated",
+      "eliminated_episode": 3,
+      "kalshi_slug": "justin-pioppi"
+    },
+    {
+      "name": "Chrissy Sarnowsky",
+      "tribe": "Civa",
+      "seasons_played": [48],
+      "archetype": "physical",
+      "age": 50,
+      "hometown": "Petoskey, MI",
+      "status": "eliminated",
+      "eliminated_episode": 2,
+      "kalshi_slug": "chrissy-sarnowsky"
+    },
+    {
+      "name": "Stephanie Berger",
+      "tribe": "Vula",
+      "seasons_played": [48],
+      "archetype": "wildcard",
+      "age": 32,
+      "hometown": "Los Angeles, CA",
+      "status": "eliminated",
+      "eliminated_episode": 1,
+      "kalshi_slug": "stephanie-berger"
+    }
+  ]
+}
